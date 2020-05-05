@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <style>
+  *
+  {
+   margin:0;
+   padding:0; 
+  }
+  .header
+  {
+ 
+  height:100vh;
+  }
+  .video-background
+  {
+  position:absolute;
+  right:0;
+  bottom:0;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  z-index:-1;
+  }
+  @media (max-aspect-ratio:16/9)
+  {
+   .video-background
+   {
+   width:auto;
+   height:100%;
+   
+   }
+  }
+  </style>
+  
+</head>
+<body>
+
+<section class="header">
+<video autoplay loop class="video-background" muted plays-inline>
+<source src="https://player.vimeo.com/external/339057318.sd.mp4?s=921d782d4cd7eba31a33f2923add2642e99007aa&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+</video>
+
+<div class="container" style="height:50px;">
+ 
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link text-secondary active" data-toggle="tab" href="#home">Signup</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-secondary" data-toggle="tab" href="#menu1">Not a member</a>
+    </li>
+    
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3 class="text-center mb-4" style="color:#f4511e;">SIGN IN<hr style="background-color:#f4511e;"></h3>
+     <form class="text-center border border-light p-5" action="#!" >
+
+   
+
+    <p style="float:left;">E-mail <i class="fa fa-envelope" style="color:#f4511e;" aria-hidden="true"></i></p>
+    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4 bg-dark type-dark" placeholder="E-mail">
+
+ <p style="float:left;">password <i class="fa fa-unlock" style="color:#f4511e;" aria-hidden="true"></i></p>
+    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4  bg-dark" placeholder="Password">
+
+    <div class="d-flex justify-content-around">
+        <div>
+            
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                <label class="custom-control-label" for="defaultLoginFormRemember" style="color:#f4511e;">Remember me!</label>
+            </div>
+        </div>
+        <div>
+            
+            <a href="" style="color:#f4511e;">Forgot password?</a>
+        </div>
+    </div>
+
+    
+    <button class="btn btn-secondary btn-block my-5" type="submit">Sign in <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+
+   
+    <p style="color:#f4511e;">Not a member?
+        <a href=""class="text-dark">Register</a>
+    </p>
+
+    
+    <p>or sign in with:</p>
+
+    <a href="https://www.facebook.com/" class="mx-2 " style="color:#f4511e;" role="button"><i class="fab fa-facebook-f DARK"></i></a>
+    <a href="https://twitter.com/login?lang=en" class="mx-2" style="color:#f4511e;" role="button"><i class="fab fa-twitter "></i></a>
+    <a href="https://www.youtube.com/" class="mx-2" style="color:#f4511e;" role="button"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/" class="mx-2" style="color:#f4511e;" role="button"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+</form>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h2 class="text-center" style="color:#f4511e;" >Log in<hr style="background-color:#f4511e;"></h2>
+       <form class="text-center border border-light p-5" action="#!">
+
+   
+
+    <p style="float:left;">E-mail <i class="fa fa-envelope" style="color:#f4511e;" aria-hidden="true"></i></p>
+    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4 bg-dark type-dark" placeholder="E-mail">
+    
+<p style="float:left;">Username <i class="fa fa-user" style="color:#f4511e;" aria-hidden="true"></i></p>
+    <input type="Username" id="defaultLoginFormusername" class="form-control mb-4 bg-dark type-dark" placeholder="Username">
+    
+    
+ <p style="float:left;">password <i class="fa fa-unlock" style="color:#f4511e;" aria-hidden="true"></i></p>
+    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4  bg-dark" placeholder="Password">
+    
+    <p style="float:left;">Confirm-password <i class="fa fa-check-circle" style="color:#f4511e;" aria-hidden="true"></i></p>
+    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4  bg-dark" placeholder="re-enterPassword">
+
+    <div class="d-flex justify-content-around">
+        <div>
+            
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                <label class="custom-control-label" for="defaultLoginFormRemember" style="color:#f4511e;">Remember me!</label>
+            </div>
+        </div>
+        <div>
+            
+           
+        </div>
+    </div>
+
+    
+    <button class="btn btn-secondary btn-block my-5" type="submit">Sign in <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+    </p>
+
+    
+    <p>or sign in with:</p>
+
+    <a href="https://www.facebook.com/" class="mx-2 " style="color:#f4511e;" role="button"><i class="fab fa-facebook-f DARK"></i></a>
+    <a href="https://twitter.com/login?lang=en" class="mx-2" style="color:#f4511e;" role="button"><i class="fab fa-twitter "></i></a>
+    <a href="https://www.youtube.com/" class="mx-2" style="color:#f4511e;" role="button"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/" class="mx-2" style="color:#f4511e;" role="button"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+</form>
+    </div>
+ </section>
+</body>
+</html>
